@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: black;
+  font-family: "Poiret One", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 3.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Spirax", sans-serif;
+  font-size: 2rem;
+  color: white;
+  margin: 0 2rem;
+}
+
+h1 {
+  font-family: "Spirax", sans-serif;
+  font-size: 5rem;
+  color: darkred;
+  margin-bottom: 1rem;
+}
+
+.first-text,
+.second-text {
+  background-color: darkred;
+  color: white;
+  height: 2.7rem;
+  width: 27rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-text {
+  margin-right: 10%;
+}
+
+.second-text {
+  margin-left: 10%;
+}
+
+.third-text {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 27rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin-bottom: 6rem;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.hot-section,
+.juicy-section,
+.cozy-section {
+  width: 100%;
+  max-width: 1080px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hot-section {
+  background-image: url(assets/hot.jpg);
+}
+
+.juicy-section {
+  background-image: url(assets/juicy.jpg);
+}
+
+.juicy-section {
+  background-image: url(assets/cozy.jpg);
+}
+
+.breakline {
+  height: 1rem;
+  width: 100%;
+  background-color: darkred;
+}
+
+@media (max-width: 525px) {
+  header {
+    justify-content: space-evenly;
+    height: 3rem;
+  }
+
+  a {
+    margin: 0 0.8rem;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .first-text {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0.5rem 10%;
+    height: auto;
+  }
+
+  .first-text p {
+    align-self: center;
+  }
+
+  .second-text {
+    visibility: hidden;
+  }
+}
